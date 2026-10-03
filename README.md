@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# HomeHive 🏠
 
-## Getting Started
+HomeHive is a full-stack real estate platform built with Next.js, where people can browse, list, and manage properties for sale or rent. Think of it as a simplified version of Zameen.com or Zillow — buyers can search and save properties, while owners can list their own properties and respond to interested buyers.
 
-First, run the development server:
+This project was built from scratch to practice and demonstrate full-stack web development: authentication, database design, file uploads, email notifications, and a responsive, modern user interface.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## What you can do on HomeHive
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**As a visitor**
+- Browse all listed properties
+- Search by city, price range, property type, and number of bedrooms
+- Sort results by newest, price, or popularity
+- View full property details, including photos, location on a map, and owner contact info
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+**As a buyer (after signing up)**
+- Save properties to a favorites list
+- Message property owners directly
+- Leave a rating and review for property owners
+- Report a listing that looks fake, outdated, or incorrect
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**As a property owner**
+- List new properties with multiple photos, pricing, and location details
+- Edit or delete your own listings
+- Mark a property as sold or rented
+- See a dashboard with total views, listings, and messages from interested buyers
 
-## Learn More
+**As an admin**
+- View overall platform statistics
+- Manage all users and properties
+- Review and act on reported listings
 
-To learn more about Next.js, take a look at the following resources:
+## Built with
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js** (App Router) — the core framework
+- **JavaScript** — no TypeScript, kept simple and readable
+- **MongoDB with Mongoose** — database and data modeling
+- **Tailwind CSS** — styling
+- **JWT (JSON Web Tokens)** — custom authentication, stored in secure HTTP-only cookies
+- **Cloudinary** — image uploads and hosting
+- **Resend** — transactional emails (inquiry notifications, password reset)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Demo accounts
 
-## Deploy on Vercel
+Since this is a portfolio project, you can explore it without creating your own account:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Buyer account:** demo.buyer@homehive.com / demo1234
+- **Owner account:** demo.owner@homehive.com / demo1234
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feel free to browse properties, save favorites, and try listing a new property.
+
+## Running this project locally
+
+1. Clone the repository
